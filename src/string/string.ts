@@ -2,10 +2,7 @@
  * leetcode - longest substring without repeating characters
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
  */
-function lengthOfLongestSubstring(s: string): number {
-  // "abcabcbb"
-  // --> "abc"
-
+export function lengthOfLongestSubstring(s: string): number {
   let longestSubString = "";
   let substringCandidate = "";
 
@@ -27,5 +24,3 @@ function lengthOfLongestSubstring(s: string): number {
   console.log(longestSubString);
   return longestSubString.length;
 }
-
-lengthOfLongestSubstring("abcabcbb");
